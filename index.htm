@@ -22,12 +22,12 @@
                     colors: {
                         "accent": "hsl(357, 65.4%, 49.8%)",
                         "dark": "hsl(0, 0%, 11%   )",
-                        "dark-02": "hsa(0, 0%, 28.6%)",
-                        "dark-03": "hsa(0, 0%, 46.7%)",
-                        "dark-04": "hsa(0, 0%, 64.3%)",
-                        "dark-05": "hsa(0, 0%, 82.4%)",
-                        "dark-06": " hsa(0, 0%, 91% )",
-                        "dark-07": "hsa(0, 0%, 95.7%)",
+                        "dark-02": "hsl(0, 0%, 28.6%)",
+                        "dark-03": "hsl(0, 0%, 46.7%)",
+                        "dark-04": "hsl(0, 0%, 64.3%)",
+                        "dark-05": "hsl(0, 0%, 82.4%)",
+                        "dark-06": " hsl(0, 0%, 91% )",
+                        "dark-07": "hsl(0, 0%, 95.7%)",
 
                     },
                     fontFamily: {
@@ -40,23 +40,85 @@
 </head>
 
 <body class="font-manrope">
-
+    <!-- banner -->
     <header class=" w-[90%]  md:w-[min(85%,73.125rem)] mx-auto min-h-screen flex items-center">
         <section class="md:flex py-20">
             <div class="flex-1 flex justify-center flex-col items-baseline">
                 <h1 class="text-7xl text-dark-01 font-bold ">It's good <br>
                     tea time at The Tea House</h1>
-                <p class="my-6 max-w-md text-lg
+                <p class="my-6 max-w-md text-lg text-dark-03
                 ">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
 
-                <button class="px-8 py-3 text-white text-xl font-bold rounded-lg bg-gradient-to-r from-[#ff0000] to-[#FF8938]">Explore More</button>
+                <button
+                    class="px-8 py-3 text-white text-xl font-bold rounded-lg bg-gradient-to-r from-[#ff0000] to-[#FF8938]">Explore
+                    More</button>
 
             </div>
-            <div class="flex-1">
-                <img class="mt-5" src="./images/banner.png"
+            <div class="flex-1 relative">
+                <img class="mt-8 " src="./images/banner.png" />
+                <div class="py-2 px-4 rounded-lg bg-dark-07 absolute bottom-4 left-40">
+                    <h3 class="text-2xl  font-bold">5.00</h3>
+                    <small class="text-dark-03">Trust Pilot Ratings</small>
+                </div>
             </div>
         </section>
+
     </header>
+
+    <!--  featured products -->
+
+    <section class="w-[90%]  md:w-[min(85%,73.125rem)] mx-auto text-center font-bold min-h-screen py-20">
+        <h1 class="text-5xl">Our Featured Products</h1>
+        <p class="font-medium text-dark-03 max-w-4xl mx-auto text-base my-8">There are many variations of passages of
+            Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or
+            randomised words which don't look even slightly believable. </p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="rounded-lg bg-gradient-to-b from-[#f4f4f4] p-8 ">
+                <img class="mx-auto" src="./images/tea-1.png" alt="">
+                <h2 class="text-2xl my-5">Milk Tea</h2>
+                <p class="text-dark-03 font-normal">Creamer could be replaced by fresh milk</p>
+            </div>
+            <div class="rounded-lg bg-gradient-to-b from-[#f4f4f4] p-8">
+                <img class="mx-auto" src="./images/tea-2.png" alt="">
+                <h2 class="text-2xl my-5">Black Tea</h2>
+                <p class="text-dark-03 font-normal">Creamer could be replaced by fresh milk</p>
+            </div>
+            <div class="rounded-lg bg-gradient-to-b from-[#f4f4f4] p-8">
+                <img class="mx-auto" src="./images/tea-3.png" alt="">
+                <h2 class="text-2xl my-5">Lemon Tea</h2>
+                <p class="text-dark-03 font-normal">Creamer could be replaced by fresh milk</p>
+            </div>
+            <div class="rounded-lg bg-gradient-to-b from-[#f4f4f4] p-8">
+                <img class="mx-auto" src="./images/tea-4.png" alt="">
+                <h2 class="text-2xl my-5">Green Tea</h2>
+                <p class="text-dark-03 font-normal">Creamer could be replaced by fresh milk</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-[90%]  md:w-[min(85%,73.125rem)] mx-auto font-bold min-h-screen py-20">
+        <div class="md:flex gap-8">
+            <div class="flex-1 grid grid-cols-2 grid-rows-[135px,auto,135px] gap-8">
+                <div class="bg-gradient-to-r from-[#ff0000] to-[#ff8938] h-full opacity-10 rounded-lg flex-1"></div>
+                <div class="p-8 bg-[#e6a523] row-span-2  rounded-lg"><img src="./images/fresh-1.png" class="mx-auto" alt=""></div>
+                <div class="p-8 bg-[#577639] rounded-lg row-span-2"><img class="mx-auto" src="./images/fresh-2.png" alt=""></div>
+                <div class="bg-gradient-to-r from-[#d9d9d9] h-full rounded-lg"></div>
+
+            
+
+            </div>
+
+            <div class="flex-1 my-16 md:m-0"> 
+                <h1 class="text-5xl">Great Tea, Freshly Presented</h1>
+                <p class="font-normal text-dark-03 mt-8 mb-4">The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers  because of good words of mouth and unique customized service orginated from Taiwan.</p>
+                <h2 class="text-xl text-dark-01
+                ">Unique Taste</h2>
+                <p class="font-normal text-dark-03 my-2">A Unique and different style from other teapots gives a luxurious and minimalist impression</p>
+                 <h2 class="text-xl text-dark-01">Premuim Quality</h2>
+                 <p class="font-normal text-dark-03 my-2">Premium Quality that makes tea more elegant and more durable when you use it.</p>
+            </div>
+        </div>
+    </section>
 
 </body>
 
