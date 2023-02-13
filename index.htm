@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea House</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/add6e03308.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "accent": "hsl(357, 65.4%, 49.8%)",
+                        "dark": "hsl(0, 0%, 11%   )",
+                        "dark-02": "hsa(0, 0%, 28.6%)",
+                        "dark-03": "hsa(0, 0%, 46.7%)",
+                        "dark-04": "hsa(0, 0%, 64.3%)",
+                        "dark-05": "hsa(0, 0%, 82.4%)",
+                        "dark-06": " hsa(0, 0%, 91% )",
+                        "dark-07": "hsa(0, 0%, 95.7%)",
+
+                    },
+                    fontFamily: {
+                        "manrope": ['Manrope', "sans-serif"],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-manrope">
+
+    <header class=" w-[90%]  md:w-[min(85%,73.125rem)] mx-auto min-h-screen flex items-center">
+        <section class="md:flex py-20">
+            <div class="flex-1 flex justify-center flex-col items-baseline">
+                <h1 class="text-7xl text-dark-01 font-bold ">It's good <br>
+                    tea time at The Tea House</h1>
+                <p class="my-6 max-w-md text-lg
+                ">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+
+                <button class="px-8 py-3 text-white text-xl font-bold rounded-lg bg-gradient-to-r from-[#ff0000] to-[#FF8938]">Explore More</button>
+
+            </div>
+            <div class="flex-1">
+                <img class="mt-5" src="./images/banner.png"
+            </div>
+        </section>
+    </header>
+
+</body>
+
+</html>
